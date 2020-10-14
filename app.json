@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Practica 1",
-    "slug": "practica-1-hello-world",
-    "description": "Practica numero 1 de la asignatura de desarrollo de aplicaciones moviles, 7mo semestre. TECNM Campus Reynosa. Hola mundo",
+    "name": "Practica 2",
+    "slug": "practica-2-calculadora",
+    "description": "Practica numero 2 de la asignatura de desarrollo de aplicaciones moviles, 7mo semestre. TECNM Campus Reynosa. Calculadora",
     "owner": "gsusmab",
     "privacy": "public",
     "version": "1.0.0",
@@ -10,11 +10,11 @@
     "githubUrl": "",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "primaryColor": "#f3f2f3",
+    "primaryColor": "#FEDC5E",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#f3f2f3"
+      "backgroundColor": "#FEDC5E"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
