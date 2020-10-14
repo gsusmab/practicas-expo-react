@@ -1,14 +1,20 @@
 {
   "expo": {
-    "name": "practicas-expo-react",
-    "slug": "practicas-expo-react",
+    "name": "Practica 1",
+    "slug": "practica-1-hello-world",
+    "description": "Practica numero 1 de la asignatura de desarrollo de aplicaciones moviles, 7mo semestre. TECNM Campus Reynosa. Hola mundo",
+    "owner": "gsusmab",
+    "privacy": "public",
     "version": "1.0.0",
+    "platforms": ["android"],
+    "githubUrl": "",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "primaryColor": "#f3f2f3",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f3f2f3"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
