@@ -1,25 +1,15 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components/native";
 
 import { lightTheme } from "./src/styles/theme";
-import { Practica2 } from "./src";
+import { Practica2 } from "./src/screens/Calculadora";
 
 export default function App() {
   return (
     <ThemeProvider theme={lightTheme}>
-      <View style={styles.container}>
-        <Practica2 />
-        <StatusBar style="dark" />
-      </View>
+      <StatusBar style="light" />
+      <Practica2 />
     </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#FEDC5E",
-  },
-});

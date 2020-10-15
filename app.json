@@ -7,7 +7,7 @@
     "privacy": "public",
     "version": "1.0.0",
     "platforms": ["android"],
-    "githubUrl": "",
+    "githubUrl": "https://github.com/gsusmab/practicas-expo-react/tree/practica-2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "primaryColor": "#FEDC5E",
