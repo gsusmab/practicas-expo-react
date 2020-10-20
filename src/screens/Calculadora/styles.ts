@@ -4,7 +4,9 @@ import { Platform, StatusBar } from "react-native";
 export const Calculadora = styled.SafeAreaView`
   flex: 1;
   background-color: #201e1f;
-  padding-top: ${Platform.OS === "android" ? StatusBar.currentHeight : 0};
+  padding-top: ${Platform.OS === "android"
+    ? `${StatusBar.currentHeight}px`
+    : 0};
 `;
 
 export const Header = styled.View`

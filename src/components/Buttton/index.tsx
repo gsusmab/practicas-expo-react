@@ -23,6 +23,7 @@ export const Button = ({
       underlayColor="#373536"
       primary={primary}
       size={size}
+      activeOpacity={0.85}
     >
       <StyledText primary={primary} highligh={highlighText}>
         {text}
