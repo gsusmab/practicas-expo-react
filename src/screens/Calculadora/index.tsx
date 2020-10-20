@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Text, View } from "react-native";
+import React from "react";
+import { Text } from "react-native";
 
+import { useCalculator } from "../../hooks/useCalculator";
 import { Button } from "../../components/Buttton";
 import { Row } from "../../components/Row";
 import {
@@ -13,107 +14,13 @@ import {
 } from "./styles";
 
 export const Practica2 = () => {
-  const [currentValue, setCurrentValue] = useState("0");
-  const [operator, setOperator] = useState("0");
-  const [previousValue, setPreviousValue] = useState("0");
-  const [equalsPressed, setEqualsPressed] = useState(false);
-
-  const handleTap = (type: string, value: string) => {
-    switch (type) {
-      case "number": {
-        if (currentValue === "0") {
-          setCurrentValue(value);
-          break;
-        } else {
-          setEqualsPressed(false);
-          setCurrentValue((crrValue) => crrValue + value);
-          break;
-        }
-      }
-
-      case "float": {
-        const isFloat = currentValue.indexOf(".") > 0;
-
-        if (!isFloat) {
-          setEqualsPressed(false);
-          setCurrentValue((crrValue) => crrValue + value);
-          break;
-        }
-
-        break;
-      }
-
-      case "operator": {
-        setOperator(value);
-        setPreviousValue(currentValue);
-        setCurrentValue("0");
-        break;
-      }
-    }
-  };
-
-  const handleMutation = (mutation: string) => {
-    switch (mutation) {
-      case "del": {
-        if (!equalsPressed) {
-          setCurrentValue(currentValue.slice(0, -1));
-          break;
-        }
-        break;
-      }
-
-      case "clear": {
-        setCurrentValue("0");
-        setPreviousValue("0");
-        setOperator("");
-        break;
-      }
-
-      case "%": {
-        const current = parseFloat(currentValue);
-        const result = current * 0.01;
-        setCurrentValue(result.toString());
-        break;
-      }
-
-      case "equal": {
-        setEqualsPressed(true);
-        const current = parseFloat(currentValue);
-        const previous = parseFloat(previousValue);
-        let result: string = "0";
-
-        switch (operator) {
-          case "+": {
-            result = (current + previous).toString();
-            setPreviousValue("0");
-            setCurrentValue(result);
-            break;
-          }
-
-          case "-": {
-            result = (previous - current).toString();
-            setPreviousValue("0");
-            setCurrentValue(result);
-            break;
-          }
-
-          case "*": {
-            result = (current * previous).toString();
-            setPreviousValue("0");
-            setCurrentValue(result);
-            break;
-          }
-
-          case "/": {
-            result = (previous / current).toString();
-            setPreviousValue("0");
-            setCurrentValue(result);
-            break;
-          }
-        }
-      }
-    }
-  };
+  const {
+    currentValue,
+    previousValue,
+    operator,
+    handleTap,
+    handleMutation,
+  } = useCalculator();
 
   return (
     <Calculadora>
