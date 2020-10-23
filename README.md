@@ -16,11 +16,12 @@ Debido a que Expo nos permite desarrollar para Android, iOS, y Web desde la mism
 ## Tabla de contenidos
 
 - [Tecnologías utilizadas](#tecnolog-as-utilizadas)
-- [Prerrequisitos](#prerrequisitos)
-- [Instalación](#instalaci-n)
-- [Ejecución](#ejecuci-n)
-- [Proceso de desarrollo](#proceso-de-desarrollo)
-  - [Practica1](#practica1)
+  - [Prerrequisitos](#prerrequisitos)
+  - [Instalación](#instalaci-n)
+  - [Ejecución](#ejecuci-n)
+  - [Proceso de desarrollo](#proceso-de-desarrollo)
+    - [Practica1](#practica1)
+  - [Conclusion](#conclusion)
 
 ## Tecnologías utilizadas
 
