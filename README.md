@@ -1,6 +1,6 @@
 # Practica 1: Hola mundo
 
-[![Practica1](Imgur "Practica1")](https://i.imgur.com/O9WyIaE.jpeg "Practica1")
+![Practica1](https://i.imgur.com/k1CRd5X.png)
 
 ## Objetivo
 
@@ -68,6 +68,14 @@ npm start
 
 ## Proceso de desarrollo
 
-A continuación se describe el proceso de desarrollo, cada una de las pantallas y la documentacion de los componentes que estas contienen.
+A continuación se describe el proceso de desarrollo, cada una de las pantallas y la documentación de los componentes que estas contienen.
 
 ### Practica1
+
+Debido a el sencillo objetivo de la aplicación esta solo utiliza componentes propios de React Native: [Text](https://reactnative.dev/docs/text "Text") e [Image](https://reactnative.dev/docs/image "Image").
+
+![Practica1: Componentes](https://i.imgur.com/H6h5C9H.png)
+
+## Conclusion
+
+Sin duda Expo es una muy buena opción para el desarrollo de aplicaciones multiplataforma, con ella ahorras costos, tiempo y en mi caso que tengo conocimientos previos sobre HTML, CSS, JS y React la curva de aprendizaje es muy baja.
